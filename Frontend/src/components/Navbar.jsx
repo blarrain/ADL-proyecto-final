@@ -41,10 +41,9 @@ function CollapsibleExample() {
 
           {/* MENÚ IZQUIERDO */}
           <Nav className="me-auto gap-3">
-            {token && user?.rol == 'cliente' ? <NavLink to="/store" className={setActiveClass} style={setActiveStyle}>
+            <NavLink to="/store" className={setActiveClass} style={setActiveStyle}>
               Tienda
-            </NavLink> : ''}
-
+            </NavLink>
 
             {token && user?.rol == 'admin' ? <NavLink to="/article" className={setActiveClass} style={setActiveStyle}>
               Artículos
